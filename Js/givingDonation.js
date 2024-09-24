@@ -24,6 +24,28 @@ document.getElementById('noakhaliDonateButton').addEventListener('click' , funct
     const afterDonations =  beforeDonations + donationAmounts
     console.log(afterDonations)
     document.getElementById('beforeDonate').innerText = afterDonations
+
+    const div = document.createElement('div')
+
+    div.innerHTML = `
+    <div class="flex justify-center">
+    <div class=" outline rounded-lg outline-[#D3D3D3] p-[2rem] mb-[1.5rem] w-[80%] ">
+    <h1 class = " font-bold "> ${donationAmounts} Taka is Donated for Flood at Noakhali, Bangladesh</h1>
+    <p class="mt-4 font-light text-[#595959]"> Date : ${new Date().toLocaleTimeString('en-US', { 
+    timeZone: 'Asia/Dhaka' ,
+    weekday: 'short', 
+    year: 'numeric', 
+    month: 'short', 
+    day: 'numeric',
+     timeZoneName: 'short' 
+    })}
+
+    </p>
+    </div>
+    </div>
+    
+    `
+    document.getElementById('history').appendChild(div)
     
     if(afterDonations > 0){
         alert('Congrats!')
@@ -58,6 +80,28 @@ document.getElementById('feniDonateButton').addEventListener('click' , function(
     const afterDonationsFeni =  beforeDonationsFeni + donationAmountsFeni
     console.log(afterDonationsFeni)
     document.getElementById('beforeDonateFeni').innerText = afterDonationsFeni
+
+    const div = document.createElement('div')
+
+    div.innerHTML = `
+    <div class="flex justify-center">
+    <div class=" outline rounded-lg outline-[#D3D3D3] p-[2rem] mb-[1.5rem] w-[80%] ">
+    <h1 class = " font-bold "> ${donationAmountsFeni} Taka is Donated for  Flood Relief in Feni, Bangladesh</h1>
+    <p class="mt-4 font-light text-[#595959]"> Date : ${new Date().toLocaleTimeString('en-US', { 
+    timeZone: 'Asia/Dhaka' ,
+    weekday: 'short', 
+    year: 'numeric', 
+    month: 'short', 
+    day: 'numeric',
+     timeZoneName: 'short' 
+    })}
+
+    </p>
+    </div>
+    </div>
+    
+    `
+    document.getElementById('history').appendChild(div)
     
     if(afterDonationsFeni > 0){
         alert('Congrats!')
@@ -93,6 +137,27 @@ document.getElementById('movementButton').addEventListener('click' , function(ev
     const afterDonationsMovement =  beforeDonationsMovement + donationAmountsMovement
     console.log(afterDonationsMovement)
     document.getElementById('beforeDonationMovement').innerText = afterDonationsMovement;
+
+    const div = document.createElement('div')
+    div.innerHTML = `
+    <div class="flex justify-center">
+    <div class=" outline rounded-lg outline-[#D3D3D3] p-[2rem] mb-[1.5rem] w-[80%] ">
+    <h1 class = " font-bold "> ${donationAmountsMovement} Taka is Donated for Aid for Injured in the Quota Movement</h1>
+    <p class="mt-4 font-light text-[#595959]"> Date : ${new Date().toLocaleTimeString('en-US', { 
+    timeZone: 'Asia/Dhaka' ,
+    weekday: 'short', 
+    year: 'numeric', 
+    month: 'short', 
+    day: 'numeric',
+     timeZoneName: 'short' 
+    })}
+
+    </p>
+    </div>
+    </div>
+    
+    `
+    document.getElementById('history').appendChild(div)
     
     if(afterDonationsMovement > 0){
         alert('Congrats!')
