@@ -10,3 +10,15 @@ document.getElementById('historyButtonColor').addEventListener('click' , functio
     showButtonColor('historyButtonColor')
     
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('switchBlog').addEventListener('click', function() {
+        window.location.href = "blog.html";
+    });
+
+    document.getElementById('switchHome').addEventListener('click', function() {
+        window.location.href = "/index.html";
+    });
+});
+
+
