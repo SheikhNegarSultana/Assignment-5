@@ -8,16 +8,32 @@ document.getElementById('noakhaliDonateButton').addEventListener('click' , funct
     // console.log(donationAmounts) 
     const walletMoneyBefore =  getTextFieldValueById( 'walletMoney' )
     
-
-
+    if( isNaN(donationAmounts)){
+        alert("Invalid Amount");
+        return;
+    }
+    if(donationAmounts < 0){
+        alert("Invalid Amount");
+        return;
+    }
+    
     if(walletMoneyBefore < donationAmounts ){
         alert("Invalid Amount");
         return;
     }
+    // if(walletMoneyBefore < donationAmounts ){
+    //     alert("Invalid Amount");
+    //     return;
+    // }
 
-    const afterDonations =  walletMoneyBefore - donationAmounts
-    console.log(afterDonations)
-    document.getElementById('walletMoney').innerText = afterDonations
+    if(walletMoneyBefore > donationAmounts){
+    const afterDonations =  walletMoneyBefore - donationAmounts;
+    document.getElementById('walletMoney').innerText = afterDonations;
+    }
+    else {
+        alert("Invalid Amount");
+        return 0;
+    }
     
 
 
@@ -29,16 +45,32 @@ document.getElementById('feniDonateButton').addEventListener('click' , function(
     const donationAmountsFeni = getInputFieldValueById( 'donationAmountFeni' )
     const walletMoneyBefore =  getTextFieldValueById( 'walletMoney' )
 
+    if( isNaN(donationAmounts)){
+        alert("Invalid Amount");
+        return;
+    }
+    if(donationAmounts < 0){
+        alert("Invalid Amount");
+        return;
+    }
     
-    if(donationAmountsFeni > walletMoneyBefore){
+    if(walletMoneyBefore < donationAmounts ){
         alert("Invalid Amount");
         return;
     }
 
+    if(walletMoneyBefore > donationAmountsFeni){
+        const afterDonationsFeni =  walletMoneyBefore - donationAmountsFeni
+        document.getElementById('walletMoney').innerText = afterDonationsFeni
+        }
+        else {
+            alert("Invalid Amount");
+            return;
+        }
    
-    const afterDonationsFeni =  walletMoneyBefore - donationAmountsFeni
-    console.log(afterDonationsFeni)
-    document.getElementById('walletMoney').innerText = afterDonationsFeni
+
+
+    
     
     
 })
@@ -51,16 +83,35 @@ document.getElementById('movementButton').addEventListener('click' , function(ev
     const donationAmountsMovement = getInputFieldValueById( 'donationMovement' )
     const walletMoneyBefore =  getTextFieldValueById( 'walletMoney' )
 
+    if( isNaN(donationAmounts)){
+        alert("Invalid Amount");
+        return;
+    }
+    if(donationAmounts < 0){
+        alert("Invalid Amount");
+        return;
+    }
+    
+    if(walletMoneyBefore < donationAmounts ){
+        alert("Invalid Amount");
+        return;
+    }
+
     
     if(donationAmountsMovement > walletMoneyBefore){
         alert("Invalid Amount");
         return;
     }
+    if(walletMoneyBefore > donationAmountsMovement){
+        const afterDonationsMovement =  walletMoneyBefore - donationAmountsMovement
+        document.getElementById('walletMoney').innerText = afterDonationsMovement;
+        }
+        else {
+            alert("Invalid Amount");
+            return;
+        }
 
-
-    const afterDonationsMovement =  walletMoneyBefore - donationAmountsMovement
-    console.log(afterDonationsMovement)
-    document.getElementById('walletMoney').innerText = afterDonationsMovement;
+    
     
    
 })

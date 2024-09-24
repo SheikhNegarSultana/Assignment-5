@@ -21,16 +21,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const donateButton = document.getElementById('noakhaliDonateButton');
-    const modalCheckbox = document.getElementById('my_modal_7');
-    
-    donateButton.addEventListener('click', function() {
-        const isValid = true; 
 
-        if (isValid) {
-            modalCheckbox.checked = true; 
-        }
-    });
-});
 
