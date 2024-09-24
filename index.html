@@ -46,7 +46,7 @@
             <div class="navbar-end">
                  <div class="navbar-center flex items-center gap-2">
                     <img src="assets/coin.png" alt="" class=" w-6 h-6 lg:w-[1.75rem] lg:h-[1.75rem]">
-                    <a class=" text-[1rem] lg:text-[1.25rm] font-medium">5500 BDT</a>
+                    <a id="walletMoney" class=" text-[1rem] lg:text-[1.25rm] font-medium">5500 BDT</a>
                 </div>
         
             </div>
@@ -81,7 +81,7 @@
               <div class=" bg-[#F3F3F3]  w-[6.875rem] px-[1rem] py-[0.625rem] rounded-[0.5rem]">
                     <div class=" flex items-center gap-[0.5rem]">
                     <img src="assets/coin.png" alt="" class=" h-[1.5rem] w-[1.5rem]">
-                    <div class=" font-normal text-[1rem]">0 BDT </div>
+                    <div id="beforeDonate" class=" font-normal text-[1rem]">0 BDT </div>
                     </div>
                    </div>
                 <!-- Money Status For Flood At Noakhali End -->
@@ -91,12 +91,25 @@
                     The recent floods in Noakhali have severely damaged homes and infrastructure. Your donation can provide essential supplies to those affected. Every contribution counts. Please support the relief efforts and help make a positive impact.
                 </p>
                 <br>
-                <input class=" p-[1.125rem] outline outline-[#E8E8E8] rounded-[0.5rem] w-full" type="text" placeholder="Write Donation Amount"> 
+                <input id="donationAmount" class=" p-[1.125rem] outline outline-[#E8E8E8] rounded-[0.5rem] w-full" type="text" placeholder="Write Donation Amount"> 
                 <br>
                 <br> 
-                <button class="btn  w-full bg-[#B4F461]">Donate Now</button>
+                <button id="noakhaliDonateButton" class="btn  w-full bg-[#B4F461]">Donate Now</button>
+
+                <!-- Modal  -->
+                <!-- <div id="donationModal" class="modal">
+                    <div class="modal-content">
+                        <h2 class=" items-center font-bold">Congrats!</h2>
+                        <p class=" items-center font-light text-[#B8B8B8]">You Have Donated for Humankind</p>
+                        <p><strong>Successfully</strong></p>
+                        <button id="closeModal" class="close-btn">close confirmation</button>
+                    </div>
+                </div> -->
+                 <!-- Modal End -->
+
               </div>
             </div>
+            
           </div>
         
     </section>
@@ -120,7 +133,7 @@
               <div class=" bg-[#F3F3F3] w-[8.06rem] px-[1rem] py-[0.625rem] rounded-[0.5rem]">
                     <div class=" flex items-center gap-[0.5rem]">
                     <img src="assets/coin.png" alt="" class=" h-[1.5rem] w-[1.5rem]">
-                    <div class=" font-normal text-[1rem]">600 BDT </div>
+                    <div id="beforeDonateFeni" class=" font-normal text-[1rem]">600 BDT </div>
                     </div>
                    </div>
                 <!-- Money Status For Flood At Feni End -->
@@ -130,10 +143,10 @@
                     Floods in Feni, Bangladesh have caused severe damage. Your donation can provide essential supplies to those affected. Every contribution helps. Please support the relief efforts.
                 </p>
                 <br>
-                <input class=" p-[1.125rem] outline outline-[#E8E8E8] rounded-[0.5rem] w-full" type="text" placeholder="Write Donation Amount"> 
+                <input id="donationAmountFeni" class=" p-[1.125rem] outline outline-[#E8E8E8] rounded-[0.5rem] w-full" type="text" placeholder="Write Donation Amount"> 
                 <br>
                 <br> 
-                <button class="btn  w-full bg-[#B4F461]">Donate Now</button>
+                <button id="feniDonateButton" class="btn  w-full bg-[#B4F461]">Donate Now</button>
               </div>
             </div>
           </div>
@@ -158,10 +171,10 @@
               <div>
 
                 <!-- Money Status For  Quota Movement  -->
-              <div class=" bg-[#F3F3F3] w-[8.06rem] px-[1rem] py-[0.625rem] rounded-[0.5rem]">
+              <div class=" bg-[#F3F3F3] w-[9.06rem] px-[1rem] py-[0.625rem] rounded-[0.5rem]">
                     <div class=" flex items-center gap-[0.5rem]">
                     <img src="assets/coin.png" alt="" class=" h-[1.5rem] w-[1.5rem]">
-                    <div class=" font-normal text-[1rem]">600 BDT </div>
+                    <div id="beforeDonationMovement" class=" font-normal text-[1rem]">2400 BDT </div>
                     </div>
                    </div>
                 <!-- Money Status For Quota Movement End -->
@@ -171,10 +184,10 @@
                     Support those injured in the Quota Movement. Your donation can provide medical care and essential supplies to those affected. Every contribution makes a significant difference. Please help.
                 </p>
                 <br>
-                <input class=" p-[1.125rem] outline outline-[#E8E8E8] rounded-[0.5rem] w-full" type="text" placeholder="Write Donation Amount"> 
+                <input id="donationMovement" class=" p-[1.125rem] outline outline-[#E8E8E8] rounded-[0.5rem] w-full" type="text" placeholder="Write Donation Amount"> 
                 <br>
                 <br> 
-                <button class="btn  w-full bg-[#B4F461]">Donate Now</button>
+                <button id="movementButton" class="btn  w-full bg-[#B4F461]">Donate Now</button>
               </div>
             </div>
           </div>
@@ -187,7 +200,9 @@
 <br>
 <br>
     
- 
+ <script src="Js/utilities.js"></script>
+ <script src="Js/givingDonation.js"></script>
+ <script src="Js/wallet.js"></script>
 </body>
 
 
