@@ -47,11 +47,13 @@ document.getElementById('noakhaliDonateButton').addEventListener('click' , funct
     `
     document.getElementById('history').appendChild(div)
     
-    if(afterDonations > 0){
-        alert('Congrats!')
-         return;
+    // if(afterDonations > 0){
+    //     alert('Congrats!')
+    //      return;
 
-    }
+    // }
+
+    
 
 })
 
@@ -103,11 +105,11 @@ document.getElementById('feniDonateButton').addEventListener('click' , function(
     `
     document.getElementById('history').appendChild(div)
     
-    if(afterDonationsFeni > 0){
-        alert('Congrats!')
-         return;
+    // if(afterDonationsFeni > 0){
+    //     alert('Congrats!')
+    //      return;
 
-    }
+    // }
 })
 
 
@@ -158,11 +160,46 @@ document.getElementById('movementButton').addEventListener('click' , function(ev
     
     `
     document.getElementById('history').appendChild(div)
-    
-    if(afterDonationsMovement > 0){
-        alert('Congrats!')
-         return;
 
-    }
+
+    
+    
+    // if(afterDonationsMovement > 0){
+    //     alert('Congrats!')
+    //      return;
+
+    // }
 })
 
+document.addEventListener('DOMContentLoaded', function() {
+    const donateButton1 = document.getElementById('noakhaliDonateButton');
+    const donateButton2 = document.getElementById('feniDonateButton');
+    const donateButton3 = document.getElementById('movementButton')
+    const modalCheckbox = document.getElementById('my_modal_7');
+    
+    donateButton1.addEventListener('click', function() {
+        const isValid = true; 
+
+        if (isValid) {
+            modalCheckbox.checked = true; 
+        }
+    });
+
+    donateButton2.addEventListener('click', function() {
+        const isValid = true; 
+
+        if (isValid) {
+            modalCheckbox.checked = true; 
+        }
+    });
+
+    donateButton3.addEventListener('click', function() {
+        const isValid = true; 
+
+        if (isValid) {
+            modalCheckbox.checked = true; 
+        }
+    });
+
+
+});
